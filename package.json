@@ -1,0 +1,19 @@
+{
+  "name": "lesson2-teamwork",
+  "version": "1.0.0",
+  "description": "Connecting backend to frontend.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chasemoses/cse341-lesson2-teamwork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chasemoses/cse341-lesson2-teamwork/issues"
+  },
+  "homepage": "https://github.com/chasemoses/cse341-lesson2-teamwork#readme"
+}

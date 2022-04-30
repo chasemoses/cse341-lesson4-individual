@@ -38,4 +38,54 @@ Content-Type: application/json
 ### DELETE ONE STRETCH
 DELETE http://localhost:8080/contacts/<id>
 
+
+
+
+
+
+
+
+
+
+
 // PRODUCTION
+
+### GET ALL CONTACTS
+GET https://cse341-lesson2.herokuapp.com/contacts
+
+### GET ONE
+GET https://cse341-lesson2.herokuapp.com/contacts/626c7bd21d11f4ab7ab260f5
+
+### GET ONE (2)
+GET https://cse341-lesson2.herokuapp.com/contacts/626c7be11d11f4ab7ab260f6
+
+### GET ONE (3)
+GET https://cse341-lesson2.herokuapp.com/contacts/626c7be51d11f4ab7ab260f7
+
+
+### CREATE ONE STRETCH
+POST https://cse341-lesson2.herokuapp.com/contacts
+Content-Type: application/json
+
+{
+  "birthday": "May 6, 1994",
+  "email": "mos15010@byui.edu",
+  "favoriteColor": "Blue",
+  "firstName": "Chase",
+  "lastName": "Moses"
+}
+
+### UPDATE ONE STRETCH
+POST https://cse341-lesson2.herokuapp.com/contacts/626c7be51d11f4ab7ab260f7
+Content-Type: application/json
+
+{
+  "birthday": "March 12, 2019",
+  "email": "oliverisastud@gmail.com",
+  "favoriteColor": "Green",
+  "firstName": "Oliver",
+  "lastName": "Moses"
+}
+
+### DELETE ONE STRETCH **Make sure to add ID to delete
+DELETE https://cse341-lesson2.herokuapp.com/contacts/626da6aaf96bac2f66c43d20

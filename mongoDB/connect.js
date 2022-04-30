@@ -6,7 +6,7 @@ const URI =`${process.env.DB_CONNECTION_STRING}`;
 
 let db;
 const connectDB = async() => {
-    mongodb.connect(URI);
+    mongodb.connect(URI, {useNewUrlParser: true});
 
     const db = mongodb.connection;
     db.on('error', (error) => console.error(error))

@@ -12,7 +12,9 @@ app
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
   })
+.use(express.json())
 .use('/', routes);
+
 
 connectDB.connectDB();
 

@@ -22,14 +22,30 @@ const getContact = async (req, res) => {
     }
 }
 
+// CREATE (For fun)
+const createContact = async (req, res) => {
 
+    const contact = new Contact({
+        birthday: req.body.birthday,
+        email: req.body.email,
+        favoriteColor: req.body.favoriteColor,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName
+    })
 
-
+    try {
+        const newContact = await contact.save();
+        res.status(201).json(newContact);
+    } catch(err) {
+        res.status(400).json({message: err.message})
+    }
+}
 
 
 
 
 module.exports = {
     getContacts,
-    getContact
+    getContact,
+    createContact
 }

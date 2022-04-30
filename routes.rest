@@ -1,0 +1,26 @@
+// LOCAL
+### GET ALL
+GET http://localhost:8080/contacts
+
+### GET ONE
+GET http://localhost:8080/contacts/626c7bd21d11f4ab7ab260f5
+
+### GET ONE
+GET http://localhost:8080/contacts/626c7be11d11f4ab7ab260f6
+
+### GET ONE
+GET http://localhost:8080/contacts/626c7be51d11f4ab7ab260f7
+
+### CREATE ONE
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "birthday": "May 6, 1994",
+  "email": "mos15010@byui.edu",
+  "favoriteColor": "Blue",
+  "firstName": "Chase",
+  "lastName": "Moses"
+}
+
+// PRODUCTION

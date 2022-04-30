@@ -1,4 +1,5 @@
 // Wanted to learn how to use schemas to make working with the database easier.
+// reference: https://www.youtube.com/watch?v=fgTGADljAeg at 12:00 in.
 const mongoose = require('mongoose');
 
 const contactSchema = new mongoose.Schema({

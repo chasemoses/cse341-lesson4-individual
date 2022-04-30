@@ -1,5 +1,5 @@
 const express = require('express');
-const connectDB = require('./mongoDB/connect');
+const mongodb = require('./mongoDB/connect');
 const app = express();
 const port = process.env.PORT || 8080;
 
@@ -16,7 +16,7 @@ app
 .use('/', routes);
 
 
-connectDB.connectDB();
+mongodb.connectDB();
 
 app.listen(port, () => {
     console.log(`Running on port ${port}`)

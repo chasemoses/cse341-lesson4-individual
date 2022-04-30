@@ -3,6 +3,8 @@ const connectDB = require('./mongoDB/connect');
 const app = express();
 const port = process.env.PORT || 8080;
 
+const routes = require('./routes/contacts');
+
 require('dotenv').config();
 
 app
@@ -10,9 +12,9 @@ app
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
   })
-.use('/', require('./routes/professional'));
+.use('/', routes);
 
-connectDB();
+connectDB.connectDB();
 
 app.listen(port, () => {
     console.log(`Running on port ${port}`)

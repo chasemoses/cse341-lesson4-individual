@@ -89,7 +89,6 @@ const updateContact = async (req, res) => {
 // DELETE (For fun)
 const deleteContact = async (req, res) => {
 
-    // Use Find By ID instead of FindOne()
     try {
         // Find contact by ID and remove
         await res.contact.deleteOne()

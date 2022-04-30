@@ -1,8 +1,11 @@
-const router = require('express').Router();
+const express = require('express');
+const router = express.Router();
 
 // require controller
-const professionalController = require('../controllers/professionalController');
+const professional = require('../controllers/professional');
 
+// GET request
+router.get('/professional', professional.getData);
 
 // export this
-module.exports = router
+module.exports = router;

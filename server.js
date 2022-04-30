@@ -5,11 +5,15 @@ const port = process.env.PORT || 8080;
 
 require('dotenv').config();
 
-const test = process.env.DB_USER;
+app
+.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+  })
+.use('/', require('./routes/professional'));
 
-console.log(test);
-//app.use('/', require('./routes'));
 connectDB();
+
 app.listen(port, () => {
     console.log(`Running on port ${port}`)
 })

@@ -27,7 +27,7 @@ const getContact = async (req, res) => {
     }
 }
 
-// CREATE (For fun)
+// CREATE 
 const createContact = async (req, res) => {
 
     // Create a model for the user to store their info in
@@ -48,7 +48,7 @@ const createContact = async (req, res) => {
     }
 }
 
-// UPDATE (For fun)
+// UPDATE
 const updateContact = async (req, res) => {
 
     // Easy to read variable.
@@ -86,7 +86,7 @@ const updateContact = async (req, res) => {
 
 }
 
-// DELETE (For fun)
+// DELETE
 const deleteContact = async (req, res) => {
 
     try {

@@ -28,11 +28,11 @@ POST http://localhost:8080/contacts/626c7be51d11f4ab7ab260f7
 Content-Type: application/json
 
 {
-  "birthday": "March 11, 2020",
+  "birthday": "",
   "email": "oliverisastud@gmail.com",
-  "favoriteColor": "Green",
-  "firstName": "Oliver",
-  "lastName": "Moses"
+  "favoriteColor": "Purple",
+  "firstName": "Morgan",
+  "lastName": "Bowman"
 }
 
 ### DELETE ONE STRETCH

@@ -11,7 +11,7 @@ GET http://localhost:8080/contacts/626c7be11d11f4ab7ab260f6
 ### GET ONE (3)
 GET http://localhost:8080/contacts/626c7be51d11f4ab7ab260f7
 
-### CREATE ONE STRETCH
+### CREATE ONE
 POST http://localhost:8080/contacts
 Content-Type: application/json
 
@@ -23,20 +23,29 @@ Content-Type: application/json
   "lastName": "Moses"
 }
 
-### UPDATE ONE STRETCH
+### UPDATE ONE
 POST http://localhost:8080/contacts/626c7be51d11f4ab7ab260f7
 Content-Type: application/json
 
 {
-  "birthday": "",
+  "birthday": "March 12, 2019",
   "email": "oliverisastud@gmail.com",
-  "favoriteColor": "Purple",
-  "firstName": "Morgan",
-  "lastName": "Bowman"
+  "favoriteColor": "Green",
+  "firstName": "Oliver",
+  "lastName": "Moses"
 }
 
-### DELETE ONE STRETCH
-DELETE http://localhost:8080/contacts/<id>
+### UPDATE PARTIAL 
+POST http://localhost:8080/contacts/626c7be51d11f4ab7ab260f7
+Content-Type: application/json
+
+{
+  "firstName": "Zachary",
+  "lastName": "Reeves"
+}
+
+### DELETE ONE
+DELETE http://localhost:8080/contacts/62774c2a0d7815c7a8ee6c40
 
 
 
@@ -80,11 +89,20 @@ POST https://cse341-lesson2.herokuapp.com/contacts/626c7be51d11f4ab7ab260f7
 Content-Type: application/json
 
 {
-  "birthday": "March 12, 2019",
-  "email": "oliverisastud@gmail.com",
+  "birthday": "July 10, 1995",
+  "email": "bowmanllane@gmail.com",
   "favoriteColor": "Green",
-  "firstName": "Oliver",
-  "lastName": "Moses"
+  "firstName": "Morgan",
+  "lastName": "Bowman"
+}
+
+### UPDATE PARTIAL CONTACT
+POST https://cse341-lesson2.herokuapp.com/contacts/626c7be51d11f4ab7ab260f7
+Content-Type: application/json
+
+{
+  "firstName": "Zachary",
+  "lastName": "Reeves"
 }
 
 ### DELETE ONE STRETCH **Make sure to add ID to delete

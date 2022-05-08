@@ -57,7 +57,7 @@ const updateContact = async (req, res) => {
     // Using "middleware" specified in ./routes/contact.js
     // Tied to async function at bottom of file.
     // Allows me to not have to FindById in all of these calls.
-        
+
     // Update contact to be whatever user specified.
     if(request.birthday != null) {
         res.contact.birthday = request.birthday

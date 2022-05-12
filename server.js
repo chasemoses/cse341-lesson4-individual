@@ -7,7 +7,7 @@ const cors = require('cors')
 require('dotenv').config();
 
 var corsOptions = {
-  origin: 'https://localhost:8080',
+  origin: 'https://localhost:8080/contacts',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 

@@ -3,8 +3,6 @@ const mongodb = require('./mongoDB/connect');
 const app = express();
 const port = process.env.PORT || 8080;
 
-const routes = require('./routes/contacts');
-
 require('dotenv').config();
 
 app
@@ -13,7 +11,7 @@ app
     next();
   })
 .use(express.json())
-.use('/', routes);
+.use('/', require('./routes/contacts'));
 
 
 mongodb.connectDB();

@@ -5,7 +5,10 @@ const Contact = require('../models/contact')
 
 // GET All Contacts
 const getContacts = async (req, res) => {
-    
+
+    // #swagger.tags = ['Contacts']
+    // #swagger.description = 'Get all contacts in database'
+
     try {
         const contacts = await Contact.find();
         res.status(200).json(contacts);
@@ -17,7 +20,11 @@ const getContacts = async (req, res) => {
 // GET One Contact
 const getContact = async (req, res) => {
 
+    // #swagger.tags = ['Contacts']
+    // #swagger.description = 'Get one contact from the database using an ID'
+
     // Use Find By ID instead of FindOne()
+
     try {
         const contact = await Contact.findById(req.params.id);
         res.json(contact);
@@ -30,7 +37,11 @@ const getContact = async (req, res) => {
 // CREATE 
 const createContact = async (req, res) => {
 
+    // #swagger.tags = ['Contacts']
+    // #swagger.description = 'Create a new contact in the database'
+
     // Create a model for the user to store their info in
+
     const contact = new Contact({
         birthday: req.body.birthday,
         email: req.body.email,
@@ -50,6 +61,9 @@ const createContact = async (req, res) => {
 
 // UPDATE
 const updateContact = async (req, res) => {
+
+    // #swagger.tags = ['Contacts']
+    // #swagger.description = 'Update exisiting contact in the database using ID to locate that contact.'
 
     // Easy to read variable.
     const request = req.body;
@@ -89,6 +103,9 @@ const updateContact = async (req, res) => {
 // DELETE
 const deleteContact = async (req, res) => {
 
+    // #swagger.tags = ['Contacts']
+    // #swagger.description = 'Searches database for specific contact based on ID and removes it from database.'
+
     try {
         // Find contact by ID and remove
         await res.contact.deleteOne()
@@ -102,6 +119,7 @@ const deleteContact = async (req, res) => {
 
 }
 
+// Middleware
 async function getDbContact(req, res, next) {
 
     let contact;

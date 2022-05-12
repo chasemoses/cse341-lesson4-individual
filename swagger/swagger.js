@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'Description',
   },
-  host: 'localhost:8080/contacts/',
+  host: 'cse-341-lesson4.herokuapp.com/',
   schemes: ['http'],
   tags: [
       {

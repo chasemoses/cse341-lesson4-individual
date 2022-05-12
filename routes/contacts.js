@@ -13,7 +13,7 @@ router.get('/api-docs', swaggerUi.setup(swaggerDocument));
 const contacts = require('../controllers/contacts');
 
 //  GET request to return all files from database
-router.get('/contacts', contacts.getContacts);
+router.get('/', contacts.getContacts);
 
 //  GET request to return specific file according to id specified by user
 router.get('/contacts/:id', contacts.getContact);

@@ -6,13 +6,8 @@ const cors = require('cors')
 
 require('dotenv').config();
 
-var corsOptions = {
-  origin: 'https://cse-341-lesson4.herokuapp.com/api-docs',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
-
 app
-.use(cors(corsOptions))
+.use(cors())
 .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();

@@ -5,8 +5,8 @@ const doc = {
     title: 'My API',
     description: 'Description',
   },
-  host: 'cse-341-lesson4.herokuapp.com/',
-  schemes: ['http'],
+  host: 'cse-341-lesson4.herokuapp.com/contacts',
+  schemes: ['http', 'https'],
   tags: [
       {
           name: 'Contacts',

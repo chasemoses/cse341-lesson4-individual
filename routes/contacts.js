@@ -22,7 +22,7 @@ router.get('/contacts/:id', contacts.getContact);
 router.post('/contacts', contacts.createContact);
 
 // UPDATE using middleware
-router.post('/contacts/:id', contacts.getDbContact, contacts.updateContact);
+router.put('/contacts/:id', contacts.getDbContact, contacts.updateContact);
 
 // DELETE using middleware
 router.delete('/contacts/:id', contacts.getDbContact,  contacts.deleteContact);

@@ -36,7 +36,7 @@ Content-Type: application/json
 }
 
 ### UPDATE PARTIAL 
-POST http://localhost:8080/contacts/626c7be51d11f4ab7ab260f7
+PUT http://localhost:8080/contacts/626c7be51d11f4ab7ab260f7
 Content-Type: application/json
 
 {

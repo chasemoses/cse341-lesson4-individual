@@ -5,7 +5,7 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "cse-341-lesson4.herokuapp.com",
+  "host": "cse-341-lesson4.herokuapp.com/contacts",
   "basePath": "/",
   "tags": [
     {
@@ -105,7 +105,7 @@
           }
         }
       },
-      "post": {
+      "put": {
         "tags": [
           "Contacts"
         ],

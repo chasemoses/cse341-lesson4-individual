@@ -7,13 +7,12 @@ const cors = require('cors')
 require('dotenv').config();
 
 app
-.use(cors())
 .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
   })
 .use(express.json())
-.use('/', require('./routes/contacts'));
+.use('/', cors(), require('./routes/contacts'));
 
 
 mongodb.connectDB();

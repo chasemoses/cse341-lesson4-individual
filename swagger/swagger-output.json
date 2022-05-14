@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API",
-    "description": "Description",
+    "title": "CSE 341 - REST API for Contacts",
+    "description": "This program utilizes CRUD operations to add, remove, display and update contacts and their information.",
     "version": "1.0.0"
   },
   "host": "cse-341-lesson4.herokuapp.com",
